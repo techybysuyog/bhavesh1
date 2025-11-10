@@ -9,14 +9,14 @@
     /* Added style for navigation buttons */
     div {
       position: absolute;
-      top: 100px;
+      top: 20px;
       right: 20px;
     }
     div a {
       background-color: #00cc66;
       color: white;
       padding: 10px 18px;
-      margin-left: 10px;
+      margin-left: 0px;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
