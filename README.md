@@ -9,8 +9,8 @@
     /* Added style for navigation buttons */
     div {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 100px;
+      right: 100px;
     }
     div a {
       background-color: #00cc66;
