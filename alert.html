@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forest Threat Alert System</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: #e8f5e9; /* forest background */
+    padding: 40px 20px;
+    color: #2e7d32;
+  }
+
+  header {
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  }
+
+  .alert-container {
+    margin: 30px auto;
+    max-width: 900px;
+  }
+
+  .alert-card {
+    background-color: #fff;
+    border-left: 8px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .alert-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .alert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .alert-type {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .severity {
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .severity.low { background-color: #4CAF50; }    /* Green */
+  .severity.medium { background-color: #FF9800; } /* Orange */
+  .severity.high { background-color: #F44336; }   /* Red */
+
+  .alert-body {
+    margin-top: 10px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .alert-time {
+    font-size: 13px;
+    color: #777;
+    margin-top: 5px;
+  }
+
+  .response-buttons {
+    margin-top: 15px;
+  }
+
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #45a049;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #2e7d32;
+    font-weight: 500;
+  }
+</style>
+</head>
+
+<body>
+
+  <header>🌲 Forest Threat Alert System</header>
+
+  <div class="alert-container">
+
+    <!-- Alert 1 -->
+    <div class="alert-card">
+      <div class="alert-header">
+        <span class="alert-type">🚨 Illegal Logging Detected</span>
+        <span class="severity high">High</span>
+      </div>
+      <div class="alert-body">
+        Deforestation activity detected in **Southern Forest Zone**. Heavy machinery sounds detected by acoustic sensors.
+      </div>
+      <div class="alert-time">Detected: 2 mins ago</div>
+      <div class="response-buttons">
+        <button class="btn">Notify Rangers</button>
+        <button class="btn">View on Map</button>
+        <button class="btn">Mark as Resolved</button>
+      </div>
+    </div>
+
+    <!-- Alert 2 -->
+    <div class="alert-card">
+      <div class="alert-header">
+        <span class="alert-type">🔥 Fire Risk Warning</span>
+        <span class="severity medium">Medium</span>
+      </div>
+      <div class="alert-body">
+        Temperature sensors indicate rising heat levels near the **Central Forest Outpost**. Possible wildfire risk.
+      </div>
+      <div class="alert-time">Detected: 10 mins ago</div>
+      <div class="response-buttons">
+        <button class="btn">Alert Team</button>
+        <button class="btn">View on Map</button>
+      </div>
+    </div>
+
+    <!-- Alert 3 -->
+    <div class="alert-card">
+      <div class="alert-header">
+        <span class="alert-type">🐘 Wildlife Movement</span>
+        <span class="severity low">Low</span>
+      </div>
+      <div class="alert-body">
+        Herd of elephants detected near **North Trail Camera #4**. No threat reported, but activity logged.
+      </div>
+      <div class="alert-time">Detected: 30 mins ago</div>
+      <div class="response-buttons">
+        <button class="btn">Log Event</button>
+        <button class="btn">Ignore</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>Protecting forests through technology 🌿</footer>
+
+</body>
+</html>
