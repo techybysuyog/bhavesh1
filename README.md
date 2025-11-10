@@ -10,7 +10,7 @@
     div {
       position: absolute;
       top: 100px;
-      right: 100px;
+      right: 20px;
     }
     div a {
       background-color: #00cc66;
